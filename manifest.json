@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Quality Toggler",
+  "version": "1.0",
+  "description": "A Chrome extension for toggling YouTube video quality using a keyboard shortcut.",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "toggle-quality": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q",
+        "mac": "MacCtrl+Shift+Q"
+      },
+      "description": "Toggle YouTube video quality."
+    }
+  },
+  "permissions": ["notifications"]
+}
